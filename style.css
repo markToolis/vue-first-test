@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: rgb(26, 22, 46);
+}
+
+.note-input-field {
+	background-color: rgb(69, 30, 139);
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 20px;
+	padding-bottom: 12px;
+	margin-top: 18px;
+}
+.note-input-field__box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.note-input-field__title {
+	color: rgb(231, 233, 235);
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.note-input-field__input {
+	margin: 0 auto;
+	outline: none;
+	border: none;
+	display: block;
+	width:  75%;
+	color: #2c3e50;
+	padding: 0.3rem 1.5rem;
+	border-radius: 20px;
+	font-size: 1rem;
+	background-color: rgb(214, 229, 241);
+	height: 36px;
+}
+.add-btn{
+	color: rgb(231, 233, 235);
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: fit-content;
+  border-radius: 99px;
+  border: none;
+  margin-right: 10px;
+  padding: 12px 12px;
+  white-space: nowrap;
+  outline: none;
+  background: rgb(86, 2, 241);
+  transition: all 0.22s;
+}
+.add-btn:hover{
+	cursor: pointer;
+}
+
+.note-list-field {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.note-list {
+	list-style: none;
+}
+
+.note-list__item {
+	background-color: rgb(62, 20, 141);
+	border-radius: 20px;
+	margin-top: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.note-list__item--total-number {
+	color: rgb(0, 0, 0);
+	background-color: rgb(150, 121, 204);
+}
+
+.note-list__item--total-number p {
+	padding: 12px 0;
+	margin-left: 21px;
+}
+
+.note-list__item__title {
+	color: rgb(231, 233, 235);
+	padding: 12px 0;
+	padding-left: 3%;
+}
+
+.note-list__item img {
+	padding-right: 15px;
+}
+
+.notification-that-there-are-no-notes {
+	color: rgb(0, 0, 0);
+	background-color: rgb(150, 121, 204);
+	border-radius: 20px;
+	margin-top: 18px;
+}
+.notification-that-there-are-no-notes__sub-title{
+	padding: 12px 0;
+	text-align: center;
+}
