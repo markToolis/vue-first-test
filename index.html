@@ -14,7 +14,8 @@
 		<div class="note-input-field">
 			<h1 class="note-input-field__title">{{ title }}</h1>
 			<div class="note-input-field__box">
-				<input type="text" class="note-input-field__input" v-model="inputValue" @keypress.enter="addNewNote" :placeholder="placeholder">
+				<input type="text" class="note-input-field__input" v-model="inputValue" @keypress.enter="addNewNote"
+					:placeholder="placeholder">
 				<button class="add-btn" v-on:click="addNewNote">Add new note</button>
 			</div>
 		</div>
@@ -23,6 +24,18 @@
 				<li class="note-list__item" v-for="myNote in notes">
 					<h2 class="note-list__item__title">{{myNote}}</h2>
 					<img src="img/img.svg" alt="" @click="deleteNote">
+					<div class="BOX">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
+								stroke="#953535" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+							<path d="M9 9.5L16.7 17.3" stroke="#953535" stroke-width="2" stroke-miterlimit="10"
+								stroke-linecap="round" />
+							<path d="M16.7 9.5L9 17.3" stroke="#953535" stroke-width="2" stroke-miterlimit="10"
+								stroke-linecap="round" />
+						</svg>
+
+					</div>
 				</li>
 				<li class="note-list__item note-list__item--total-number">
 					<p>
@@ -30,7 +43,9 @@
 					</p>
 				</li>
 			</ul>
-			<div class="notification-that-there-are-no-notes" v-else><h2 class="notification-that-there-are-no-notes__sub-title">You don't have any notes yet !</h2></div>
+			<div class="notification-that-there-are-no-notes" v-else>
+				<h2 class="notification-that-there-are-no-notes__sub-title">You don't have any notes yet !</h2>
+			</div>
 		</div>
 	</div>
 	<script src="https://unpkg.com/vue@next"></script>
