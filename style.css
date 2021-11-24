@@ -92,7 +92,7 @@ body {
 .note-list__item__title {
 	color: rgb(231, 233, 235);
 	padding: 12px 0;
-	padding-left: 3%;
+	padding-left: 21px;
 }
 
 .note-list__item__title__img{
@@ -144,7 +144,7 @@ body {
 		margin: 0px auto; 
 		margin-top: 20px;
 	}
-	.note-list__item{
+	.note-list-field{
 		width: 90%;
 	}
 }
