@@ -12,7 +12,7 @@
 <body>
 	<div class="container" id="app">
 		<div class="note-input-field">
-			<h1 class="note-input-field__title">{{ title }}</h1>
+			<h1 class="note-input-field__title" :style="{color: inputValue.length > 12 ? 'red' : 'rgb(231, 233, 235)' }">{{ title }}</h1>
 			<div class="note-input-field__box">
 				<input type="text" class="note-input-field__input" v-model="inputValue" @keypress.enter="addNewNote"
 					:placeholder="placeholder">

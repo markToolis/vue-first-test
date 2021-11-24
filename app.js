@@ -4,7 +4,7 @@ const app = {
 			title : "Note list:",
 			inputValue: '',
 			notes: ["Yuor first note"],
-			placeholder: "Enter a title for the note"
+			placeholder: "Enter a title for the note (max 15)"
 		}
 	},
 	methods:{
@@ -17,6 +17,15 @@ const app = {
 		deleteNote(e) {
 			this.notes.shift(e.target)
 		},
+	},
+	watch: {
+		inputValue(value) {
+			if (value.length > 15) {
+				this.inputValue = 0
+			}
+			console.log(value)
+		}
+
 	}
 }
 
